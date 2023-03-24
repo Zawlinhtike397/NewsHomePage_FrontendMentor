@@ -25,7 +25,7 @@ Very dark blue: hsl(240, 100%, 5%)
 
 ### Body Copy
 
-- Font size (paragraph): 15px
+- Font size (paragraph): 15px //done
 
 ### Font
 

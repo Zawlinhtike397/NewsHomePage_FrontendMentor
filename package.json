@@ -1,10 +1,7 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.2.7"
-  },
   "name": "news-homepage-main",
-  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
   "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
   "main": "tailwind.config.js",
   "dependencies": {
     "acorn": "^7.4.1",
@@ -60,6 +57,7 @@
     "run-parallel": "^1.2.0",
     "source-map-js": "^1.0.2",
     "supports-preserve-symlinks-flag": "^1.0.0",
+    "tailwindcss": "^3.2.7",
     "to-regex-range": "^5.0.1",
     "util-deprecate": "^1.0.2",
     "xtend": "^4.0.2",
