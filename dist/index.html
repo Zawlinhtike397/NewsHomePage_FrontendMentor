@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       rel="icon"
@@ -33,99 +33,119 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
     </style>
   </head>
-  <body>
-    <!-- navbar -->
-    <nav class="">
-      <a href=""><img src="../assets/images/logo.svg" alt="Page Logo" /></a>
-      <div class="">
-        <ul>
-          <li><a href="#" class="text">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </div>
-    </nav>
+  <body class="bg-offwhite font-inter">
+    <div class="container mx-auto w-[90%]">
+      <!-- navbar -->
+      <nav class="">
+        <a href="#"><img src="../assets/images/logo.svg" alt="Page Logo" /></a>
+        <div class="">
+          <img src="../assets/images/icon-menu.svg" alt="" />
+          <ul class="">
+            <li><a href="#" class="text">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- Herosection -->
-    <div class="bg-red-600">
-      <img
-        src="../assets/images/image-web-3-mobile.jpg"
-        alt="Herosection_logo"
-      />
+      <!-- Herosection+side bar -->
+      <div class="">
+        <div class="">
+          <img
+            src="../assets/images/image-web-3-mobile.jpg"
+            alt="Herosection_logo"
+          />
 
-      <h1>The Bright Future of Web 3.0?</h1>
-      <div class="">
-        <p class="text-gray-600 text-sm font-normal font-inter">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button>Read more</button>
-      </div>
-    </div>
+          <h1 class="text-5xl font-bold pt-3">The Bright Future of Web 3.0?</h1>
+          <div class="">
+            <p class="text-darkGrayishBlue text-paragraph font-normal py-4">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="bg-softRed px-5 py-3 text-offwhite font-bold tracking-wider"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
 
-    <!-- sidebar -->
-    <aside>
-      <h2>New</h2>
-      <div class="">
-        <h3>Hydrogen VS Electric Cars</h3>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <!-- sidebar -->
+        <aside class="bg-veryDarkBlue my-14 pl-3">
+          <h2 class="text-3xl text-softOrange font-bold py-5">New</h2>
+          <div class="">
+            <h3 class="text-offwhite font-bold">Hydrogen VS Electric Cars</h3>
+            <p class="text-darkGrayishBlue text-paragraph font-normal">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr class="" />
+          <div class="">
+            <h3 class="text-offwhite font-bold">
+              The Downsides of AI Artistry
+            </h3>
+            <p class="text-darkGrayishBlue text-paragraph font-normal">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr />
+          <div class="">
+            <h3 class="text-offwhite font-bold">Is VC Funding Drying Up?</h3>
+            <p class="text-darkGrayishBlue text-paragraph font-normal">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </aside>
       </div>
+      <!-- Another blog cards -->
       <div class="">
-        <h3>The Downsides of AI Artistry</h3>
-        <p>
-          What are the possible adverse effects of on-demand AI image
-          generation?
-        </p>
-      </div>
-      <div class="">
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>
-          Private funding by VC firms is down 50% YOY. We take a look at what
-          that means.
-        </p>
-      </div>
-    </aside>
+        <div class="">
+          <img src="../assets/images/image-retro-pcs.jpg" alt="RetroPCs" />
+          <p>01</p>
+          <h5>Reviving Retro PCs</h5>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
 
-    <!-- Another blog cards -->
-    <div class="">
-      <div class="">
-        <img src="../assets/images/image-retro-pcs.jpg" alt="RetroPCs" />
-        <p>01</p>
-        <h5>Reviving Retro PCs</h5>
-        <p>What happens when old PCs are given modern upgrades?</p>
+        <div class="">
+          <img
+            src="../assets/images/image-top-laptops.jpg"
+            alt="Laptop keyboard"
+          />
+          <p>02</p>
+          <h5>Top 10 Laptops of 2022</h5>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+
+        <div class="">
+          <img
+            src="../assets/images/image-gaming-growth.jpg"
+            alt="xbox controller"
+          />
+          <p>03</p>
+          <h5>The Growth of Gaming</h5>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
       </div>
 
-      <div class="">
-        <img
-          src="../assets/images/image-top-laptops.jpg"
-          alt="Laptop keyboard"
-        />
-        <p>02</p>
-        <h5>Top 10 Laptops of 2022</h5>
-        <p>Our best picks for various needs and budgets.</p>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
       </div>
-
-      <div class="">
-        <img
-          src="../assets/images/image-gaming-growth.jpg"
-          alt="xbox controller"
-        />
-        <p>03</p>
-        <h5>The Growth of Gaming</h5>
-        <p>How the pandemic has sparked fresh opportunities.</p>
-      </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>

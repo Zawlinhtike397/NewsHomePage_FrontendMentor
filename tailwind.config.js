@@ -1,20 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./dist/**/*.{html,js}"
-  ],
+  content: ["./dist/**/*.{html,js}"],
   theme: {
-    fontSize: {
-      sm: '0.938rem'
-    },
+    // container: {
+
+    // },
+
     extend: {
-      fontFamily: {
-        'inter': ['Inter', 'sans-serif']
+      fontSize: {
+        paragraph: "0.938rem",
       },
-      colors:{
-        'offwhite': 'hsl(36, 100%, 99%)',
-        'Grayish blue': 'hsl(233, 8%, 79%)',
-        
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+      colors: {
+        offwhite: "hsl(36, 100%, 99%)",
+        grayishBlue: "hsl(233, 8%, 79%)",
+        darkGrayishBlue: "hsl(236, 13%, 42%)",
+        veryDarkBlue: "hsl(240, 100%, 5%)",
+        softOrange: "hsl(35, 77%, 62%)",
+        softRed: "hsl(5, 85%, 63%)",
       },
     },
   },
