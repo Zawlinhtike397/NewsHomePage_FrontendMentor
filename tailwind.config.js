@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    // container: {
-
-    // },
+    screens: {
+      xxxs: "200px",
+      xs: "520px",
+      ...defaultTheme.screens,
+    },
 
     extend: {
       fontSize: {

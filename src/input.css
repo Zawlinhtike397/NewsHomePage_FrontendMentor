@@ -1,4 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+@layer base {
+  nav {
+    @apply fixed w-[60%] right-0 top-0 bg-offwhite z-10 h-screen transition duration-300;
+  }
+
+  /* This is another way */
+  .mobile-menu {
+    @apply block;
+  }
+
+  nav {
+    @apply hidden;
+  }
+}

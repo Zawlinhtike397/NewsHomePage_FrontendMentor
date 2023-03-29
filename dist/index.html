@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <!-- linking with compiled css file -->
+    <!-- linking with compiled css fil -->
     <link rel="stylesheet" href="output.css" />
 
     <!-- Google fonts -->
@@ -42,12 +42,20 @@
     </style>
   </head>
   <body class="bg-offwhite font-inter">
-    <div class="container mx-auto w-[90%]">
-      <!-- navbar -->
-      <nav class="">
-        <a href="#"><img src="../assets/images/logo.svg" alt="Page Logo" /></a>
+    <div class="mx-auto w-[90%] my-9">
+      <!-- navbar  -->
         <div class="">
-          <img src="../assets/images/icon-menu.svg" alt="" />
+          <div class="grid  grid-cols-6 items-center mobile-overlay">
+            <a href="#">
+              <img src="../assets/images/logo.svg" alt="Page Logo" />
+            </a>
+            <img src="../assets/images/icon-menu.svg"  class="col-end-7 justify-self-end mobile-menu-btn"  alt="Open Navigation" />
+          </div>
+
+        <div class="">
+          <!-- mobile navigation links -->
+          <nav>
+            <img src="../assets/images/icon-menu-close.svg" class=" mobile-exitIcon" alt="Close Navigation">
           <ul class="">
             <li><a href="#" class="text">Home</a></li>
             <li><a href="#">New</a></li>
@@ -56,9 +64,11 @@
             <li><a href="#">Categories</a></li>
           </ul>
         </div>
-      </nav>
+        </nav>
+        </div>
 
       <!-- Herosection+side bar -->
+      <main class="mobile-overlay">
       <div class="">
         <div class="">
           <img
@@ -82,17 +92,19 @@
         </div>
 
         <!-- sidebar -->
-        <aside class="bg-veryDarkBlue my-14 pl-3">
-          <h2 class="text-3xl text-softOrange font-bold py-5">New</h2>
-          <div class="">
-            <h3 class="text-offwhite font-bold">Hydrogen VS Electric Cars</h3>
+        <aside class="bg-veryDarkBlue my-14 px-5">
+          <h2 class="text-4xl text-softOrange font-bold pt-6">New</h2>
+          <div class="py-6">
+            <h3 class="text-offwhite font-bold text-xl">
+              Hydrogen VS Electric Cars
+            </h3>
             <p class="text-darkGrayishBlue text-paragraph font-normal">
               Will hydrogen-fueled cars ever catch up to EVs?
             </p>
           </div>
           <hr class="" />
-          <div class="">
-            <h3 class="text-offwhite font-bold">
+          <div class="py-6">
+            <h3 class="text-offwhite font-bold text-xl">
               The Downsides of AI Artistry
             </h3>
             <p class="text-darkGrayishBlue text-paragraph font-normal">
@@ -101,8 +113,10 @@
             </p>
           </div>
           <hr />
-          <div class="">
-            <h3 class="text-offwhite font-bold">Is VC Funding Drying Up?</h3>
+          <div class="py-6">
+            <h3 class="text-offwhite font-bold text-xl">
+              Is VC Funding Drying Up?
+            </h3>
             <p class="text-darkGrayishBlue text-paragraph font-normal">
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
@@ -110,33 +124,71 @@
           </div>
         </aside>
       </div>
-      <!-- Another blog cards -->
-      <div class="">
-        <div class="">
-          <img src="../assets/images/image-retro-pcs.jpg" alt="RetroPCs" />
-          <p>01</p>
-          <h5>Reviving Retro PCs</h5>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
 
-        <div class="">
+      <!-- Articles like 01,02,03-->
+      <div class="">
+        <!-- 01 article start -->
+        <div class="flex gap-6 max-w-sm">
+          <img
+            src="../assets/images/image-retro-pcs.jpg"
+            width="100px"
+            alt="RetroPCs"
+          />
+
+          <!-- class="sm:max-w-full sm:max-h-full" -->
+          <div class="">
+            <p class="text-grayishBlue text-4xl font-bold">01</p>
+            <h5 class="text-veryDarkBlue font-extrabold text-lg py-2">
+              Reviving Retro PCs
+            </h5>
+            <p
+              class="text-darkGrayishBlue text-paragraph font-normal leading-7"
+            >
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <!-- 01 article end -->
+
+        <!-- 02 article -->
+        <div class="flex gap-6 max-w-sm my-9">
           <img
             src="../assets/images/image-top-laptops.jpg"
+            width="100px"
             alt="Laptop keyboard"
           />
-          <p>02</p>
-          <h5>Top 10 Laptops of 2022</h5>
-          <p>Our best picks for various needs and budgets.</p>
+
+          <div class="">
+            <p class="text-grayishBlue text-4xl font-bold">02</p>
+            <h5 class="text-veryDarkBlue font-extrabold text-lg py-2">
+              Top 10 Laptops of 2022
+            </h5>
+            <p
+              class="text-darkGrayishBlue text-paragraph font-normal leading-7"
+            >
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
         </div>
 
-        <div class="">
+        <!-- 03 articlie -->
+        <div class="flex gap-6 max-w-sm mb-7">
           <img
             src="../assets/images/image-gaming-growth.jpg"
+            width="100px"
             alt="xbox controller"
           />
-          <p>03</p>
-          <h5>The Growth of Gaming</h5>
-          <p>How the pandemic has sparked fresh opportunities.</p>
+          <div>
+            <p class="text-grayishBlue text-4xl font-bold">03</p>
+            <h5 class="text-veryDarkBlue font-extrabold text-lg py-2">
+              The Growth of Gaming
+            </h5>
+            <p
+              class="text-darkGrayishBlue text-paragraph font-normal leading-7"
+            >
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -146,6 +198,29 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
+    </main>
+
+      <!-- Link external  js for menubar -->
+        <script src="sidebar.js"></script>
+          
+          
+          // //Only toggle works, add and remove classlist does not work like before,I have
+          // to troubleshoot this error like before.
+
+          //another way
+          // menuBtn.addEventListener("click",toggleNav) 
+          
+          // exitBtn.addEventListener("click",toggleNav);
+
+          // let toggleNav = () => {
+          //   if (navBar.classList.contains('hidden')){
+          //   navBar.classList.remove('hidden');
+          // }
+          // else{
+          //   navBar.classList.add('hidden');
+          // }
+          // };
+        <!-- </script> -->
     </div>
   </body>
 </html>
