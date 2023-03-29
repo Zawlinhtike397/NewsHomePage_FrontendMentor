@@ -437,10 +437,6 @@ nav {
 
 /* This is another way */
 
-.mobile-menu {
-  display: block;
-}
-
 nav {
   display: none;
 }
@@ -538,6 +534,14 @@ nav {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.mobile-menu {
+  display: block;
+}
+
+/* .mobileNavi {
+    @apply bg-offwhite opacity-100;
+  } */
 
 .col-end-7 {
   grid-column-end: 7;

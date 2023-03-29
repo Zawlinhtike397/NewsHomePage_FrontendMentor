@@ -9,11 +9,17 @@
   }
 
   /* This is another way */
-  .mobile-menu {
-    @apply block;
-  }
 
   nav {
     @apply hidden;
   }
+}
+@layer components {
+  .mobile-menu {
+    @apply block;
+  }
+
+  /* .mobileNavi {
+    @apply bg-offwhite opacity-100;
+  } */
 }

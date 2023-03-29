@@ -1,3 +1,4 @@
+// const { white } = require("color-name");
 const menuBtn = document.querySelector(".mobile-menu-btn");
 const navBar = document.querySelector("nav");
 const exitBtn = document.querySelector(".mobile-exitIcon");
@@ -15,24 +16,32 @@ const exitBtn = document.querySelector(".mobile-exitIcon");
 menuBtn.addEventListener("click", () => {
   navBar.classList.add("mobile-menu");
   MenuOverlay();
-  document.querySelector("main").style.opacity = "0.7";
-  document.querySelector(".navigationBar").style.opacity = "0.3";
-  //the thing i want is overlay (not opacity)
+  // document.querySelector("main").style.opacity = "0.7";
+  // document.querySelector(".navigationBar").style.opacity = "0.3";
 });
 
 exitBtn.addEventListener("click", () => {
   navBar.classList.remove("mobile-menu");
-  document.querySelector("main").style.opacity = "1";
-  document.querySelector(".navigationBar").style.opacity = "1";
+  MenuOverlay();
+  // document.querySelector("main").style.opacity = "1";
+  // document.querySelector(".navigationBar").style.opacity = "1";
 });
 
 function MenuOverlay() {
+  const body_Overlay = document.querySelector(".all-Class");
   if (navBar.classList.contains("mobile-menu")) {
-    const mOverlay = document.querySelector("body");
-    mOverlay.style.opacity = "0.5";
-    mOverlay.style.backgroundColor = "hsl(233, 8%, 79%)";
+    // navBar.classList.add("mobileNavi");
+    const mOverlay = document.querySelector(".MobileNavi");
+    body_Overlay.style.opacity = "0.5";
+    body_Overlay.style.backgroundColor = "hsl(233, 8%, 79%)";
+    mOverlay.style.opacity = "1";
+    mOverlay.style.backgroundColor = "white";
+  } else {
+    body_Overlay.style.opacity = "1";
+    body_Overlay.style.backgroundColor = "hsl(36, 100%, 99%)";
   }
   //Still get the error,how can i only leave the mobilenav unaffected from reduce opacity??
-  // else {
-  // }
+  // When i overlay the body, i can make all of the background black. When all-Class div overlay,
+  //  i get the desired effect on mobile navbar but not on underlying body?How can i mix these twos?
+  // should i use backdrop tailwind??
 }
