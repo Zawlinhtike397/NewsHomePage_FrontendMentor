@@ -46,37 +46,50 @@
       <!-- navbar  -->
       <div class="">
         <div class="grid grid-cols-6 items-center mobile-overlay">
-          <a href="#">
+          <a href="#" class="mb-4">
             <img src="../assets/images/logo.svg" alt="Page Logo" />
           </a>
           <img
             src="../assets/images/icon-menu.svg"
-            class="col-end-7 justify-self-end mobile-menu-btn"
+            class="col-end-7 justify-self-end mb-4 mobile-menu-btn"
             alt="Open Navigation"
           />
         </div>
 
         <div class="">
           <!-- mobile navigation links -->
-          <nav class="MobileNavi">
+          <nav class="">
             <img
               src="../assets/images/icon-menu-close.svg"
-              class="mobile-exitIcon"
+              class="mobile-exitIcon float-right pt-6 mx-4"
+              width="30px"
+              height="30px"
               alt="Close Navigation"
             />
-            <ul class="">
-              <li><a href="#" class="text">Home</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Popular</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Categories</a></li>
+            <ul class="mt-28 space-x-4 space-y-4">
+              <li class="ml-4">
+                <a href="#" class="text-paragraph">Home</a>
+              </li>
+              <li class="">
+                <a href="#" class="text-paragraph">New</a>
+              </li>
+              <li class="">
+                <a href="#" class="text-paragraph">Popular</a>
+              </li>
+              <li class="">
+                <a href="#" class="text-paragraph">Trending</a>
+              </li>
+              <li class="m-4">
+                <a href="#" class="text-paragraph">Categories</a>
+              </li>
             </ul>
           </nav>
+          <div class="mobile-Overlay"></div>
         </div>
       </div>
 
       <!-- Herosection+side bar -->
-      <main class="mobile-overlay">
+      <main>
         <div class="">
           <div class="">
             <img
@@ -212,15 +225,6 @@
 
       <!-- Link external  js for menubar -->
       <script src="sidebar.js"></script>
-
-      // //Only toggle works, add and remove classlist does not work like
-      before,I have // to troubleshoot this error like before. //another way //
-      menuBtn.addEventListener("click",toggleNav) //
-      exitBtn.addEventListener("click",toggleNav); // let toggleNav = () => { //
-      if (navBar.classList.contains('hidden')){ //
-      navBar.classList.remove('hidden'); // } // else{ //
-      navBar.classList.add('hidden'); // } // };
-      <!-- </script> -->
     </div>
   </body>
 </html>
