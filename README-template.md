@@ -2,6 +2,12 @@
 
 - Do I need to gitignore the tailwind files since it contains a large amount of the files? **(If needed,What files are needed to be written in the gitignore)**
 
+# Requirements
+
+- responsive image
+- to give justify end to specific range(or)arrange the distance between title and text of hero section.
+- give sidebar the enough distance.
+
 # Frontend Mentor - News homepage solution
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
