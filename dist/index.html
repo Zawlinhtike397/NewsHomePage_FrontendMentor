@@ -91,23 +91,25 @@
       <!-- lg:grid lg:grid-cols-[80%_20%] -->
       <!-- Herosection+side bar  Herosection_logo -->
       <main class="w-[95%] mx-auto">
-        <div class="lg:grid lg:grid-cols-[80%_20%]">
-          <div class="">
+        <div class="lg:grid lg:grid-cols-[70%_25%] lg:justify-between">
+          <div>
             <img
               src="../assets/images/image-web-3-mobile.jpg"
               alt=""
-              class=""
+              class="w-full h-auto md:h-[80vh]"
             />
-            <!-- <div class="container"> max-w-full h-auto-->
+            <!-- <div class="container"> -->
             <!-- Do I really need to use container? -->
             <!-- why gap does not work? -->
             <!-- md class md:grid-cols-6  md:w-[16rem] md:w-[21rem] md:justify-self-end-->
-            <div class="grid grid-cols-1 gap-0 md:grid-cols-6">
-              <h1 class="text-5xl font-bold pt-3 md:col-span-2 md:w-[16rem]">
+            <div
+              class="grid grid-cols-1 md:grid-cols-[40%_50%] md:justify-between"
+            >
+              <h1 class="text-5xl font-bold pt-3 md:w-[16rem]">
                 The Bright Future of Web 3.0?
               </h1>
 
-              <div class="md:col-span-3 md:w-[21rem] md:justify-self-end">
+              <div class="md:w-[21rem]">
                 <p class="text-darkGrayishBlue text-paragraph font-normal py-4">
                   We dive into the next evolution of the web that claims to put
                   the power of the platforms back into the hands of the people.
@@ -120,23 +122,26 @@
                 </button>
               </div>
             </div>
+
             <!-- </div>  -->
           </div>
 
           <!-- sidebar -->
-          <aside class="bg-veryDarkBlue my-14 px-5 lg:min-w-full">
+          <aside class="bg-veryDarkBlue my-14 px-5 lg:my-0 lg:w h-full">
             <h2 class="text-4xl text-softOrange font-bold pt-6">New</h2>
-            <div class="py-6">
-              <h3 class="text-offwhite font-bold text-xl">
-                Hydrogen VS Electric Cars
-              </h3>
-              <p class="text-darkGrayishBlue text-paragraph font-normal">
-                Will hydrogen-fueled cars ever catch up to EVs?
-              </p>
+            <div class="py-8">
+              <a href="#">
+                <h3 class="text-offwhite font-bold text-xl pb-2">
+                  Hydrogen VS Electric Cars
+                </h3>
+                <p class="text-darkGrayishBlue text-paragraph font-normal">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </a>
             </div>
             <hr />
-            <div class="py-6">
-              <h3 class="text-offwhite font-bold text-xl">
+            <div class="py-8">
+              <h3 class="text-offwhite font-bold text-xl pb-2">
                 The Downsides of AI Artistry
               </h3>
               <p class="text-darkGrayishBlue text-paragraph font-normal">
@@ -145,7 +150,7 @@
               </p>
             </div>
             <hr />
-            <div class="py-6">
+            <div class="pt-8">
               <h3 class="text-offwhite font-bold text-xl">
                 Is VC Funding Drying Up?
               </h3>
