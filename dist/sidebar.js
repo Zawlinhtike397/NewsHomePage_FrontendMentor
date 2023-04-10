@@ -15,16 +15,12 @@ const exitBtn = document.querySelector(".mobile-exitIcon");
 // Another way
 menuBtn.addEventListener("click", () => {
   navBar.classList.add("mobile-menu");
-  MenuOverlay();
-  // document.querySelector("main").style.opacity = "0.7";
-  // document.querySelector(".navigationBar").style.opacity = "0.3";
+  
 });
 
 exitBtn.addEventListener("click", () => {
   navBar.classList.remove("mobile-menu");
-  MenuOverlay();
-  // document.querySelector("main").style.opacity = "1";
-  // document.querySelector(".navigationBar").style.opacity = "1";
+  MenuOverlay(); 
 });
 
 function MenuOverlay() {

@@ -5,7 +5,7 @@
 
 @layer base {
   nav {
-    @apply fixed w-[60%] right-0 top-0 bg-offwhite z-10 h-screen transition duration-300;
+    @apply fixed w-[60%] right-0 top-0 bg-offwhite z-20 h-screen transition duration-300;
   }
 
   /* This is another way */
@@ -19,7 +19,7 @@
     @apply block;
   }
 
-  /* .mobileNavi {
-    @apply bg-offwhite opacity-100;
-  } */
+  .mobile-overlay{
+    @apply hidden h-full w-full z-10
+  }
 }
