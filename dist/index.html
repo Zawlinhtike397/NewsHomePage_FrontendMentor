@@ -42,80 +42,106 @@
     </style>
   </head>
   <body class="bg-offwhite font-inter">
-    <div class="mx-auto w-[90%] my-9 all-Class">
+    <div class="my-9">
       <!-- navbar  -->
-      <div class="">
-        <div class="grid grid-cols-6 items-center mobile-overlay">
-          <a href="#">
-            <img src="../assets/images/logo.svg" alt="Page Logo" />
-          </a>
+
+      <div
+        class="grid grid-cols-6 items-center mobile-overlay w-[95%] mx-auto md:justify-between"
+      >
+        <a href="#" class="mb-9">
+          <img src="../assets/images/logo.svg" alt="Page Logo" />
+        </a>
+        <img
+          src="../assets/images/icon-menu.svg"
+          class="col-end-7 justify-self-end mb-9 mobile-menu-btn md:hidden"
+          alt="Open Navigation"
+        />
+
+        <!--  navigation links -->
+        <nav class="md:flex md:bg-transparent md:absolute md:h-auto">
           <img
-            src="../assets/images/icon-menu.svg"
-            class="col-end-7 justify-self-end mobile-menu-btn"
-            alt="Open Navigation"
+            src="../assets/images/icon-menu-close.svg"
+            class="mobile-exitIcon float-right pt-6 mx-4 md:hidden"
+            width="30px"
+            height="30px"
+            alt="Close Navigation"
           />
-        </div>
-
-        <div class="">
-          <!-- mobile navigation links -->
-          <nav class="MobileNavi">
-            <img
-              src="../assets/images/icon-menu-close.svg"
-              class="mobile-exitIcon"
-              alt="Close Navigation"
-            />
-            <ul class="">
-              <li><a href="#" class="text">Home</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Popular</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Categories</a></li>
-            </ul>
-          </nav>
-          <div class="mobile-overlay"></div>
-        </div>
+          <ul
+            class="mt-28 space-x-4 space-y-4 md:flex md:my-9 md:space-y-0 md:-z-0"
+          >
+            <li class="ml-4 md:text-right">
+              <a href="#" class="text-paragraph">Home</a>
+            </li>
+            <li class="">
+              <a href="#" class="text-paragraph">New</a>
+            </li>
+            <li class="">
+              <a href="#" class="text-paragraph">Popular</a>
+            </li>
+            <li class="">
+              <a href="#" class="text-paragraph">Trending</a>
+            </li>
+            <li class="m-4">
+              <a href="#" class="text-paragraph">Categories</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-Overlay"></div>
       </div>
-
-      <!-- Herosection+side bar -->
-      <main class="mobile-overlay">
-        <div class="">
-          <div class="">
+      <!-- lg:grid lg:grid-cols-[80%_20%] -->
+      <!-- Herosection+side bar  Herosection_logo -->
+      <main class="w-[95%] mx-auto">
+        <div class="lg:grid lg:grid-cols-[70%_25%] lg:justify-between">
+          <div>
             <img
               src="../assets/images/image-web-3-mobile.jpg"
-              alt="Herosection_logo"
+              alt=""
+              class="w-full h-auto md:h-[80vh]"
             />
+            <!-- <div class="container"> -->
+            <!-- Do I really need to use container? -->
+            <!-- why gap does not work? -->
+            <!-- md class md:grid-cols-6  md:w-[16rem] md:w-[21rem] md:justify-self-end-->
+            <div
+              class="grid grid-cols-1 md:grid-cols-[40%_50%] md:justify-between"
+            >
+              <h1 class="text-5xl font-bold pt-3 md:w-[16rem]">
+                The Bright Future of Web 3.0?
+              </h1>
 
-            <h1 class="text-5xl font-bold pt-3">
-              The Bright Future of Web 3.0?
-            </h1>
-            <div class="">
-              <p class="text-darkGrayishBlue text-paragraph font-normal py-4">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <button
-                class="bg-softRed px-5 py-3 text-offwhite font-bold tracking-wider"
-              >
-                Read more
-              </button>
+              <div class="md:w-[21rem]">
+                <p class="text-darkGrayishBlue text-paragraph font-normal py-4">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button
+                  class="bg-softRed px-5 py-3 text-offwhite font-bold tracking-wider"
+                >
+                  Read more
+                </button>
+              </div>
             </div>
+
+            <!-- </div>  -->
           </div>
 
           <!-- sidebar -->
-          <aside class="bg-veryDarkBlue my-14 px-5">
+          <aside class="bg-veryDarkBlue my-14 px-5 lg:my-0 lg:w h-full">
             <h2 class="text-4xl text-softOrange font-bold pt-6">New</h2>
-            <div class="py-6">
-              <h3 class="text-offwhite font-bold text-xl">
-                Hydrogen VS Electric Cars
-              </h3>
-              <p class="text-darkGrayishBlue text-paragraph font-normal">
-                Will hydrogen-fueled cars ever catch up to EVs?
-              </p>
+            <div class="py-8">
+              <a href="#">
+                <h3 class="text-offwhite font-bold text-xl pb-2">
+                  Hydrogen VS Electric Cars
+                </h3>
+                <p class="text-darkGrayishBlue text-paragraph font-normal">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </a>
             </div>
-            <hr class="" />
-            <div class="py-6">
-              <h3 class="text-offwhite font-bold text-xl">
+            <hr />
+            <div class="py-8">
+              <h3 class="text-offwhite font-bold text-xl pb-2">
                 The Downsides of AI Artistry
               </h3>
               <p class="text-darkGrayishBlue text-paragraph font-normal">
@@ -124,7 +150,7 @@
               </p>
             </div>
             <hr />
-            <div class="py-6">
+            <div class="pt-8">
               <h3 class="text-offwhite font-bold text-xl">
                 Is VC Funding Drying Up?
               </h3>
@@ -213,15 +239,22 @@
 
       <!-- Link external  js for menubar -->
       <script src="sidebar.js"></script>
-
-      // //Only toggle works, add and remove classlist does not work like
-      before,I have // to troubleshoot this error like before. //another way //
-      menuBtn.addEventListener("click",toggleNav) //
-      exitBtn.addEventListener("click",toggleNav); // let toggleNav = () => { //
-      if (navBar.classList.contains('hidden')){ //
-      navBar.classList.remove('hidden'); // } // else{ //
-      navBar.classList.add('hidden'); // } // };
-      <!-- </script> -->
     </div>
+
+    <!-- <div class="container mx-auto">
+      <div class="grid grid-cols-12 gap-1">
+        <div class="col-span-12 md:col-span-6">Column 1</div>
+
+        <div class="col-span-12 md:col-span-6">Column 2</div>
+      </div>
+    </div> -->
+
+    <!-- <div class="grid grid-cols-1 lg:grid-cols-4">
+      <div class="col-span-1 lg:col-span-2">
+        Takes one column on mobile and two on desktop
+      </div>
+      <div>1st One of three columns</div>
+      <div>2nd One of three columns</div>
+    </div> -->
   </body>
 </html>
