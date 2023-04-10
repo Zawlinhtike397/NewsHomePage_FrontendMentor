@@ -640,16 +640,6 @@ nav {
   margin-bottom: 2.25rem;
 }
 
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -690,52 +680,12 @@ nav {
   height: 100%;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
-.h-\[70v\] {
-  height: 70v;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
 .w-\[95\%\] {
   width: 95%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[70vw\] {
-  width: 70vw;
-}
-
-.min-w-full {
-  min-width: 100%;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .max-w-sm {
@@ -817,14 +767,13 @@ nav {
   padding-bottom: 1rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pt-3 {
@@ -833,10 +782,6 @@ nav {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .pt-8 {
@@ -944,11 +889,6 @@ nav {
     margin-bottom: 2.25rem;
   }
 
-  .md\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -957,28 +897,12 @@ nav {
     display: none;
   }
 
-  .md\:h-auto {
-    height: auto;
-  }
-
-  .md\:h-\[70vh\] {
-    height: 70vh;
-  }
-
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:h-\[90vh\] {
-    height: 90vh;
-  }
-
   .md\:h-\[80vh\] {
     height: 80vh;
   }
 
-  .md\:h-\[\] {
-    height: ;
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-\[16rem\] {
@@ -1011,11 +935,6 @@ nav {
     background-color: transparent;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:text-right {
     text-align: right;
   }
@@ -1033,22 +952,6 @@ nav {
 
   .lg\:grid {
     display: grid;
-  }
-
-  .lg\:h-\[\] {
-    height: ;
-  }
-
-  .lg\:h-\[70vh\] {
-    height: 70vh;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:min-w-full {
-    min-width: 100%;
   }
 
   .lg\:grid-cols-4 {
