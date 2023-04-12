@@ -42,11 +42,11 @@
     </style>
   </head>
   <body class="bg-offwhite font-inter">
-    <div class="my-9">
-      <!-- navbar  -->
+    <div class="my-9 max-w-[1440px] mx-auto">
 
+      <!-- navbar  -->
       <div
-        class="grid grid-cols-6 items-center mobile-overlay w-[95%] mx-auto md:justify-between"
+        class="grid grid-cols-2 items-center mobile-overlay w-[95%] mx-auto md:justify-end"
       >
         <a href="#" class="mb-9">
           <img src="../assets/images/logo.svg" alt="Page Logo" />
@@ -67,37 +67,41 @@
             alt="Close Navigation"
           />
           <ul
-            class="mt-28 space-x-4 space-y-4 md:flex md:my-9 md:space-y-0 md:-z-0"
+            class="mt-28 space-x-4 space-y-4 md:flex md:my-9  md:space-y-0 md:-z-0"
           >
-            <li class="ml-4 md:text-right">
-              <a href="#" class="text-paragraph">Home</a>
+            <li class="ml-4">
+              <a href="#" class="text-paragraph hover:text-softRed  transition-colors duration-500">Home</a>
             </li>
             <li class="">
-              <a href="#" class="text-paragraph">New</a>
+              <a href="#" class="text-paragraph  hover:text-softRed  transition-colors duration-500">New</a>
             </li>
             <li class="">
-              <a href="#" class="text-paragraph">Popular</a>
+              <a href="#" class="text-paragraph hover:text-softRed  transition-colors duration-500">Popular</a>
             </li>
             <li class="">
-              <a href="#" class="text-paragraph">Trending</a>
+              <a href="#" class="text-paragraph hover:text-softRed  transition-colors duration-500">Trending</a>
             </li>
-            <li class="m-4">
-              <a href="#" class="text-paragraph">Categories</a>
+            <li class="m-4 md:justify-self-end ">
+              <a href="#" class="text-paragraph hover:text-softRed  transition-colors duration-500">Categories</a>
             </li>
           </ul>
         </nav>
         <div class="mobile-Overlay"></div>
       </div>
+
       <!-- lg:grid lg:grid-cols-[80%_20%] -->
       <!-- Herosection+side bar  Herosection_logo -->
       <main class="w-[95%] mx-auto">
-        <div class="lg:grid lg:grid-cols-[70%_25%] lg:justify-between">
+        <div class="lg:grid lg:grid-cols-[75%_22%] lg:justify-between">
           <div>
-            <img
-              src="../assets/images/image-web-3-mobile.jpg"
+            <div>
+              <img
+              src="../assets/images/image-web-3-mobile.jpg" width="500px" height="200px"
               alt=""
-              class="w-full h-auto md:h-[80vh]"
-            />
+              class="w-full   md:h-[60vh] min-[1440px]:hidden object-cover"
+              />
+              <img src="../assets/images/image-web-3-desktop.jpg" alt="DesktopImages" class="hidden min-[1440px]:inline-block">
+          </div>
             <!-- <div class="container"> -->
             <!-- Do I really need to use container? -->
             <!-- why gap does not work? -->
@@ -116,7 +120,7 @@
                   But is it really fulfilling its promise?
                 </p>
                 <button
-                  class="bg-softRed px-5 py-3 text-offwhite font-bold tracking-wider"
+                  class="bg-softRed hover:bg-veryDarkBlue transition-colors duration-700 px-5 py-3 text-offwhite font-bold tracking-wider"
                 >
                   Read more
                 </button>
@@ -131,29 +135,34 @@
             <h2 class="text-4xl text-softOrange font-bold pt-6">New</h2>
             <div class="py-8">
               <a href="#">
-                <h3 class="text-offwhite font-bold text-xl pb-2">
+                <h3 class="text-offwhite hover:text-softOrange transition-colors duration-700 font-bold text-xl pb-2">
                   Hydrogen VS Electric Cars
                 </h3>
+              </a>
                 <p class="text-darkGrayishBlue text-paragraph font-normal">
                   Will hydrogen-fueled cars ever catch up to EVs?
                 </p>
-              </a>
+              
             </div>
             <hr />
-            <div class="py-8">
-              <h3 class="text-offwhite font-bold text-xl pb-2">
+            <div class="py-8 ">
+              <a href="#">
+              <h3 class="text-offwhite hover:text-softOrange transition-colors duration-700 font-bold text-xl pb-2">
                 The Downsides of AI Artistry
               </h3>
+              </a>
               <p class="text-darkGrayishBlue text-paragraph font-normal">
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
             </div>
             <hr />
-            <div class="pt-8">
-              <h3 class="text-offwhite font-bold text-xl">
+            <div class="py-8">
+              <a href="#">
+              <h3 class="text-offwhite hover:text-softOrange transition-colors duration-700 font-bold text-xl">
                 Is VC Funding Drying Up?
               </h3>
+              </a>
               <p class="text-darkGrayishBlue text-paragraph font-normal">
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
@@ -163,21 +172,21 @@
         </div>
 
         <!-- Articles like 01,02,03-->
-        <div class="">
+        <div class="grid md:grid-cols-2 subLg:grid-cols-3 md:gap-6 min-[1100px]:my-8">
           <!-- 01 article start -->
           <div class="flex gap-6 max-w-sm">
             <img
               src="../assets/images/image-retro-pcs.jpg"
-              width="100px"
-              alt="RetroPCs"
+              width="100px" 
+              alt="RetroPCs" class="object-cover"
             />
-
-            <!-- class="sm:max-w-full sm:max-h-full" -->
-            <div class="">
+            <div>
               <p class="text-grayishBlue text-4xl font-bold">01</p>
-              <h5 class="text-veryDarkBlue font-extrabold text-lg py-2">
+              <a href="#">
+              <h5 class="text-veryDarkBlue hover:text-softRed  transition-colors duration-700 font-extrabold text-lg py-2">
                 Reviving Retro PCs
               </h5>
+              </a>
               <p
                 class="text-darkGrayishBlue text-paragraph font-normal leading-7"
               >
@@ -188,18 +197,20 @@
           <!-- 01 article end -->
 
           <!-- 02 article -->
-          <div class="flex gap-6 max-w-sm my-9">
+          <div class="flex gap-6 max-w-sm my-9 md:my-0 ">
             <img
               src="../assets/images/image-top-laptops.jpg"
-              width="100px"
+              width="100px" class="object-cover"
               alt="Laptop keyboard"
             />
 
-            <div class="">
+            <div>
               <p class="text-grayishBlue text-4xl font-bold">02</p>
-              <h5 class="text-veryDarkBlue font-extrabold text-lg py-2">
+              <a href="#">
+              <h5 class="text-veryDarkBlue hover:text-softRed  transition-colors duration-700 font-extrabold text-lg py-2">
                 Top 10 Laptops of 2022
               </h5>
+            </a>
               <p
                 class="text-darkGrayishBlue text-paragraph font-normal leading-7"
               >
@@ -209,17 +220,19 @@
           </div>
 
           <!-- 03 articlie -->
-          <div class="flex gap-6 max-w-sm mb-7">
+          <div class="flex gap-6 max-w-sm mb-7 md:my-0">
             <img
               src="../assets/images/image-gaming-growth.jpg"
               width="100px"
-              alt="xbox controller"
+              alt="xbox controller" class="object-cover"
             />
             <div>
               <p class="text-grayishBlue text-4xl font-bold">03</p>
-              <h5 class="text-veryDarkBlue font-extrabold text-lg py-2">
+              <a href="#">
+              <h5 class="text-veryDarkBlue hover:text-softRed  transition-colors duration-700 font-extrabold text-lg py-2">
                 The Growth of Gaming
               </h5>
+              </a>
               <p
                 class="text-darkGrayishBlue text-paragraph font-normal leading-7"
               >
@@ -240,21 +253,5 @@
       <!-- Link external  js for menubar -->
       <script src="sidebar.js"></script>
     </div>
-
-    <!-- <div class="container mx-auto">
-      <div class="grid grid-cols-12 gap-1">
-        <div class="col-span-12 md:col-span-6">Column 1</div>
-
-        <div class="col-span-12 md:col-span-6">Column 2</div>
-      </div>
-    </div> -->
-
-    <!-- <div class="grid grid-cols-1 lg:grid-cols-4">
-      <div class="col-span-1 lg:col-span-2">
-        Takes one column on mobile and two on desktop
-      </div>
-      <div>1st One of three columns</div>
-      <div>2nd One of three columns</div>
-    </div> -->
   </body>
 </html>

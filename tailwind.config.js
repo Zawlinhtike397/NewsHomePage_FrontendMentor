@@ -5,8 +5,7 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     screens: {
-      xxxs: "200px",
-      xs: "520px",
+      subLg: '1102px',
       ...defaultTheme.screens,
     },
 

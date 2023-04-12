@@ -2,6 +2,7 @@
 
 - Do I need to gitignore the tailwind files since it contains a large amount of the files? **(If needed,What files are needed to be written in the gitignore)**
 - My width-95% for viewport logic is wrong, i have to do like kelvin container method (container , width: blah px and center that container);
+- me-auto will work the navigation align right problem?
 
 # Requirements
 
@@ -14,17 +15,21 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [My Questions](#my-questions)
+- [Requirements](#requirements)
+- [Frontend Mentor - News homepage solution](#frontend-mentor---news-homepage-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
